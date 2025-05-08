@@ -138,7 +138,8 @@ nav {
 
 
   .cont{
-  background-color:peachpuff;
+  background-color:rgb(253, 252, 252);
+  border: 1px solid rgb(194, 52, 52);
   color:black;
   /* display: flex; */
   padding: 10px;
