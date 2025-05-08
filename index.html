@@ -1,0 +1,109 @@
+!DOCTYPE html><html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1>Sarika's Portfolio</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="section">
+        <h2 style="color: coral;">Welcome To My Portfolio !!!</h2><br><br><br>
+        <img src="img.webp" alt="img" class="img">
+        <h1>Hi, I'm <samp style="color: tomato">
+                <H1>Sarika Udage</H1>
+            </samp></h1>
+        <br>
+        <p>Frontend Developer</p><br>
+        <a href="cv.pdf" class="btn" download>Download CV</a><br><br>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2><br><br>
+        <pre style="font-size: 16;font-family: 'Poppins', sans-serif ">
+              I am a passionate frontend developer specializing in building responsive 
+         and interactive websites with  modern design principles. Currently i am pursuving
+         second year of Bsc(Computer Science)  in New Art's Commerce and Science College
+         Shevgaon.  I did the course in backend languages like  C,java,Data Structure 
+         using C .And some frontend languages includes HTML,CSS,JS.I enjoy turning 
+         complex problems into simple, beautiful, and intuitive designs.</h3></pre><br>
+        <button class="btn" onclick="showContent('skills')">Skills</button>
+        <button class="btn" onclick="showContent('education')">Education</button>
+        <div id="skills" class="content-toggle">
+            <br>
+            <p>HTML, CSS, JavaScript, Responsive Design,java,c</p>
+        </div>
+        <div id="education" class="content-toggle">
+            <br>
+            <ul>
+                <li>SSC (2020-2021) - Residential High School, Shevgaon - 85%</li><br>
+                <li>HSC (2021-2023) - Residential Junior College of Science, Shevgaon - 71.8%</li><br>
+                <li>B.Sc. (Computer Science) - New Arts, Commerce, and Science College, Shevgaon (Pursuing)</li><br>
+            </ul>
+        </div>
+    </section>
+    <section id="services" class="section">
+        <h2>Services</h2><br><br>
+        <ul class="lstyle">
+            <li>Responsive Web Design</li><br>
+            <li>Frontend Development (HTML, CSS, JavaScript)</li><br>
+            <li>Single Page Applications </li><br>
+            <li>Website Performance Optimization</li><br>
+            <li>Cross-Browser Compatibility</li>
+        </ul>
+    </section>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive and elegant portfolio</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h2>Contact Me</h2><br><br><br>
+       
+                <div class="cont_c">
+                    <div class="cont">Email: <br>sarikaudeage2006@gmail.com</div>
+                    <div class="social-icons">
+                      <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                      
+                  
+                      <div class="cont">
+                        <a href="https://github.com/SarikaUdage" target="_blank" ><img src="gitlogo.png" alt="Gitlogo" width="50" height="50" ></a>
+                      </div>
+                      </div>
+                
+          
+              
+       
+    </section>
+    <script>
+        function showContent(id) {
+            const contents = document.querySelectorAll('.content-toggle');
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
