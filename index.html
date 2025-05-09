@@ -1,33 +1,37 @@
-!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div>
+            <div class="logo">
                 <h1>Sarika's Portfolio</h1>
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
     <section id="home" class="section">
         <h2 style="color: coral;">Welcome To My Portfolio !!!</h2><br><br><br>
-        <img src="img2.avif" alt="img" class="img">
-        <h1>Hi, I'm <samp style="color: tomato">
-                <H1>Sarika Udage</H1>
-            </samp></h1>
+        <img src="img.avif" alt="img" class="img">
+        <h1>Hi, I'm <span style="color: tomato">Sarika Udage</span></h1>
         <br>
         <p>Frontend Developer</p><br>
         <a href="cv.pdf" class="btn" download>Download CV</a><br><br>
@@ -35,18 +39,19 @@
 
     <section id="about" class="section">
         <h2>About Me</h2><br><br>
-        <pre style="font-size: 16;font-family: 'Poppins', sans-serif ">
-              I am a passionate frontend developer specializing in building responsive 
-         and interactive websites with  modern design principles. Currently i am pursuving
-         second year of Bsc(Computer Science)  in New Art's Commerce and Science College
-         Shevgaon.  I did the course in backend languages like  C,java,Data Structure 
-         using C .And some frontend languages includes HTML,CSS,JS.I enjoy turning 
-         complex problems into simple, beautiful, and intuitive designs.</h3></pre><br>
+        <div class="about-text">
+            I am a passionate frontend developer specializing in building responsive 
+            and interactive websites with modern design principles. Currently I am pursuing
+            second year of Bsc(Computer Science) in New Art's Commerce and Science College
+            Shevgaon. I did the course in backend languages like C, Java, Data Structure 
+            using C. And some frontend languages includes HTML, CSS, JS. I enjoy turning 
+            complex problems into simple, beautiful, and intuitive designs.
+        </div><br>
         <button class="btn" onclick="showContent('skills')">Skills</button>
         <button class="btn" onclick="showContent('education')">Education</button>
         <div id="skills" class="content-toggle">
             <br>
-            <p>HTML, CSS, JavaScript, Responsive Design,java,c</p>
+            <p>HTML, CSS, JavaScript, Responsive Design, Java, C</p>
         </div>
         <div id="education" class="content-toggle">
             <br>
@@ -78,34 +83,16 @@
     </section>
     <section id="contact" class="section">
         <h2>Contact Me</h2><br><br><br>
-       
-                <div class="cont_c">
-                    <div class="cont">Email: <br><br>sarikaudeage2006@gmail.com</div>
-                    <div class="social-icons">
-                      <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                      
-                  
-                      <div class="cont">
-                        <h4>Github :</h4>
-                        <a href="https://github.com/SarikaUdage" target="_blank" >
-                            <img src="gitlogo.png" alt="Gitlogo" width="50" height="50" ></a>
-                      </div>
-                      </div>
-                
-          
-              
-       
+
+        <div class="cont_c">
+            <div class="cont">Email: <br><br>sarikaudeage2006@gmail.com</div>
+            <div class="cont">
+                <h4>Github :</h4>
+                <a href="https://github.com/SarikaUdage" target="_blank">
+                    <img src="gitlogo.png" alt="Gitlogo" width="50" height="50"></a>
+            </div>
+        </div>
     </section>
-    <script>
-        function showContent(id) {
-            const contents = document.querySelectorAll('.content-toggle');
-            contents.forEach(content => content.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-        }
-    </script>
 </body>
 
 </html>
